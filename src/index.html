@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://static.nodejs.so/css/reset.css">
+	<style type="text/css">
+		#test{
+			height:500px;
+			width: 100%;
+			background:red;
+			overflow:hidden;
+			font-size:24px;
+			color:#fff;
+			font-weight:bold;
+		}
+	</style>
+	<script src="http://demo.nodejs.so/svon/elements/json2.js"></script>
+	<script src="http://static.nodejs.so/js/modules/jquery/1.11.1/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div id="test">test</div>
+	<script type="text/javascript">
+		var test = document.getElementById('test');
+		test.addEventListener('click',function(){ 
+			test.appendChild(document.createTextNode("1"));
+		});
+	</script>
+</body>
+</html>
